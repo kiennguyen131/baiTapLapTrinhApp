@@ -33,7 +33,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder( ViewHolder holder, int position) {
 
-        // here we will find the position and start setting the output on our views
+
 
         String nameofDrink = modelList.get(position).getmDrinkName();
         String descriptionofdrink = modelList.get(position).getmDrinkDetail();
@@ -44,17 +44,17 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         holder.imageView.setImageResource(images);
 
     }
-
+// get vi tri cua item
     @Override
     public int getItemCount() {
         return modelList.size();
     }
 
-    // in order to make our views responsive we can implement onclicklistener on our recyclerview
+
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        // here we will find the views on which we will inflate our data
+
 
         TextView mDrinkName, mDrinkDescription;
         ImageView imageView;
@@ -69,11 +69,11 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
 
 
         }
-
+// bat su kien cho item chuyen qua activiti khac
         @Override
         public void onClick(View v) {
 
-            // lets get the position of the view in list and then work on it
+
 
             int position = getAdapterPosition();
 
@@ -86,6 +86,35 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
                 Intent intent2 = new Intent(context, LatteActivity.class);
                 context.startActivity(intent2);
             }
+            if (position == 2) {
+                Intent intent3 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent3);
+            }
+            if (position == 3) {
+                Intent intent4 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent4);
+            }
+            if (position == 4) {
+                Intent intent5 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent5);
+            }
+            if (position == 5) {
+                Intent intent6 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent6);
+            }
+            if (position == 6) {
+                Intent intent7 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent7);
+            }
+            if (position == 7) {
+                Intent intent8 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent8);
+            }
+            if (position == 8) {
+                Intent intent9 = new Intent(context, LatteActivity.class);
+                context.startActivity(intent9);
+            }
+
         }
     }
 }

@@ -2,35 +2,30 @@
     <string name="app_name">OrderApp</string>
 
 
-    <string name="greentea">Green Tea. Blended with mint,
-    lemongrass and lemon verbena, then sweetened just right and given a good shake with ice, so-refreshing!</string>
+    <string name="greentea">Trà xanh. Trộn với bạc hà,
+     sả và cỏ roi ngựa chanh, sau đó được làm ngọt vừa phải và cho vào ly lắc với đá, thật sảng khoái! </string>
 
 
-    <string name="latte">A neat twist that can be done with any of the new Teavana teas is called a tea latte.
-    Basically, a tea latte is equal parts hot tea and steamed milk.  </string>
+    <string name="latte">Một biến tấu nhỏ gọn có thể được thực hiện với bất kỳ loại trà Teavana mới nào được gọi là trà latte.
+     Về cơ bản, một ly trà là một phần trà nóng và sữa hấp bằng nhau.   </string>
 
 
-    <string name="orangesmoothie">Starbucks Orange Mango Smoothie. A nourishing blend of natural orange mango juice,
-    a whole banana, milk, whey protein, and fiber powder and ice.</string>
+    <string name="orangesmoothie">Một biến tấu nhỏ gọn có thể được thực hiện với bất kỳ loại trà Teavana mới nào được gọi là trà latte.</string>
 
 
     <string name="orangevanilla">Vanilla Bean Crème Frappuccino® Blended Beverage. This rich and creamy blend of vanilla bean, milk and ice topped with
     whipped cream takes va-va-vanilla flavor to another level.</string>
 
 
-    <string name="cappcuni">By Starbucks definition, a cappuccino is mostly milk foam, which weighs a lot less than milk. ... More specifically, a
-    cappuccino is made up of shots of espresso, half steamed milk (2% by default,) </string>
+    <string name="cappcuni">Nước giải khát hỗn hợp Vanilla Bean Crème Frappuccino®. Hỗn hợp béo ngậy và béo ngậy này gồm đậu vani, sữa và đá phủ trên
+     kem đánh bông đưa hương vị va-va-vani lên một cấp độ khác  </string>
 
 
-    <string name="thaitea">Thai Tea is is made from strongly-brewed black tea, often spiced with ingredients such as star anise,
-    crushed tamarind, cardamom</string>
-    <string name="tea">Right next to water, tea is hailed as the most consumed drink in the world. Every single drop of tea
-    comes from the same type of plant</string>
-    <string name="bubbletea">Bubble Tea is the name given to the wide variety of refreshing flavoured
-    fruit teas and milk teas served ice cold or piping hot with chewy
-    tapioca balls that you suck up through a big fat straw! .</string>
-    <string name="match">Smooth and creamy matcha sweetened just right and served with steamed milk. This
-    favorite will transport your senses to pure green delight. </string>
+    <string name="thaitea">Trà Thái được làm từ trà đen pha đặc, thường được thêm gia vị với các thành phần như hoa hồi,
+     me nghiền, thảo quả </string>
+    <string name="tea">Ngay bên cạnh nước, trà được ca ngợi là thức uống được tiêu thụ nhiều nhất trên thế giới. Mỗi giọt trà đều đến từ cùng một loại cây </string>
+    <string name="bubbletea">Bubble Tea là cái tên được đặt cho rất nhiều loại trà có hương vị tươi mátB .</string>
+    <string name="match">Matcha kem mịn và ngọt vừa phải, dùng với sữa hấp. Điều này </string>
 
 
 </resources>

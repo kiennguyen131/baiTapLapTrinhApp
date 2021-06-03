@@ -9,7 +9,7 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 
 import com.example.orderapp.Database.OrderContract;
-
+// aapter cua gio hang
 public class CartAdapter extends CursorAdapter {
 
 
@@ -25,7 +25,7 @@ public class CartAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
 
-        // getting theviews
+
 
         TextView drinkName, yesCream, yesTopping, price, quantity;
 
@@ -36,7 +36,7 @@ public class CartAdapter extends CursorAdapter {
         yesTopping = view.findViewById(R.id.hasTopping);
         quantity = view.findViewById(R.id.quantityinOrderSummary);
 
-        // getting the values by first getting the position of their columns
+
 
         int name = cursor.getColumnIndex(OrderContract.OrderEntry.COLUMN_NAME);
         int priceofdrink = cursor.getColumnIndex(OrderContract.OrderEntry.COLUMN_PRICE);

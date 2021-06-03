@@ -11,15 +11,15 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     List<Model> modelList;
-    RecyclerView recyclerView;
-    OrderAdapter mAdapter;
+    RecyclerView recyclerView;//su dung 1 recycleview
+    OrderAdapter mAdapter;//thong qua 1 adepter
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // creating an arraylist
+      //khoi tao 1 array list
 
         modelList = new ArrayList<>();
         modelList.add(new Model("Green Tea", getString(R.string.greentea), R.drawable.greentea ));
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         modelList.add(new Model("Bubble Tea", getString(R.string.bubbletea), R.drawable.milk));
         modelList.add(new Model("Matcha", getString(R.string.match), R.drawable.match));
 
-        // recyclerview
+        //khai bao recycleview
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(null));
-        // adapter
+
         mAdapter = new OrderAdapter(this, modelList);
         recyclerView.setAdapter(mAdapter);
 

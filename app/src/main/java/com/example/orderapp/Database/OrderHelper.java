@@ -15,7 +15,7 @@ public class OrderHelper extends SQLiteOpenHelper {
         super(context, DATABSE_NAME, null, DATABASE_VERSION);
     }
 
-
+//tao database
     @Override
     public void onCreate(SQLiteDatabase db) {
         String SQL_TABLE = "CREATE TABLE " + OrderContract.OrderEntry.TABLE_NAME + " ("

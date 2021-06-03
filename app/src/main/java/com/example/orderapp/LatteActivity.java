@@ -21,7 +21,7 @@ import com.example.orderapp.Database.OrderContract;
 
 public class LatteActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    // first of all we will get the views that are  present in the layout of info
+
 
     ImageView imageView;
     ImageButton plusquantity, minusquantity;
@@ -47,7 +47,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
         addtoCart = findViewById(R.id.addtocart);
         addExtraCream = findViewById(R.id.addCream);
 
-        // setting the name of drink
+
 
         drinnkName.setText("Lattee Tea");
         imageView.setImageResource(R.drawable.late);
@@ -57,8 +57,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
             public void onClick(View v) {
                 Intent intent = new Intent(LatteActivity.this, SummaryActivity.class);
                 startActivity(intent);
-                // once this button is clicked we want to save our values in the database and send those values
-                // right away to summary activity where we display the order info
+
 
                 SaveCart();
             }
@@ -67,7 +66,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
         plusquantity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // coffee price
+
                 int basePrice = 5;
                 quantity++;
                 displayQuantity();
@@ -76,7 +75,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
                 coffeePrice.setText(setnewPrice);
 
 
-                // checkBoxes functionality
+
 
                 int ifCheckBox = CalculatePrice(addExtraCream, addToppings);
                 coffeePrice.setText("$ " + ifCheckBox);
@@ -89,7 +88,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
             public void onClick(View v) {
 
                 int basePrice = 5;
-                // because we dont want the quantity go less than 0
+
                 if (quantity == 0) {
                     Toast.makeText(LatteActivity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
                 } else {
@@ -100,7 +99,7 @@ public class LatteActivity extends AppCompatActivity implements LoaderManager.Lo
                     coffeePrice.setText(setnewPrice);
 
 
-                    // checkBoxes functionality
+              //check so luowng
 
                     int ifCheckBox = CalculatePrice(addExtraCream, addToppings);
                     coffeePrice.setText("$ " + ifCheckBox);

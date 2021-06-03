@@ -24,7 +24,7 @@ public class SummaryActivity extends AppCompatActivity implements LoaderManager.
 
 
         Button clearthedata = findViewById(R.id.clearthedatabase);
-
+        // goi den delete trong orderProvider
         clearthedata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

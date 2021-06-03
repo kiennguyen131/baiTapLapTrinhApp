@@ -21,7 +21,7 @@ import com.example.orderapp.Database.OrderContract;
 
 public class InfoActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    // first of all we will get the views that are  present in the layout of info
+
 
     ImageView imageView;
     ImageButton plusquantity, minusquantity;
@@ -47,17 +47,16 @@ public class InfoActivity extends AppCompatActivity implements LoaderManager.Loa
         addtoCart = findViewById(R.id.addtocart);
         addExtraCream = findViewById(R.id.addCream);
 
-        // setting the name of drink
+
 
         drinnkName.setText("Green Tea");
-
+        //bat su kien cho nut
         addtoCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(InfoActivity.this, SummaryActivity.class);
-                startActivity(intent);
-                // once this button is clicked we want to save our values in the database and send those values
-                // right away to summary activity where we display the order info
+                startActivity(intent);// chuyen activity qua intent
+
 
                 SaveCart();
             }
@@ -88,7 +87,7 @@ public class InfoActivity extends AppCompatActivity implements LoaderManager.Loa
             public void onClick(View v) {
 
                 int basePrice = 5;
-                // because we dont want the quantity go less than 0
+
                 if (quantity == 0) {
                     Toast.makeText(InfoActivity.this, "Cant decrease quantity < 0", Toast.LENGTH_SHORT).show();
                 } else {
@@ -99,7 +98,7 @@ public class InfoActivity extends AppCompatActivity implements LoaderManager.Loa
                     coffeePrice.setText(setnewPrice);
 
 
-                    // checkBoxes functionality
+
 
                     int ifCheckBox = CalculatePrice(addExtraCream, addToppings);
                     coffeePrice.setText("$ " + ifCheckBox);
@@ -113,7 +112,7 @@ public class InfoActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private boolean SaveCart() {
 
-        // getting the values from our views
+
         String name = drinnkName.getText().toString();
         String price = coffeePrice.getText().toString();
         String quantity = quantitynumber.getText().toString();
@@ -151,18 +150,18 @@ public class InfoActivity extends AppCompatActivity implements LoaderManager.Loa
         return hasAllRequiredValues;
 
     }
-
+        // ham tinh toan
     private int CalculatePrice(CheckBox addExtraCream, CheckBox addToppings) {
 
         int basePrice = 5;
 
         if (addExtraCream.isChecked()) {
-            // add the cream cost $2
+
             basePrice = basePrice + 2;
         }
 
         if (addToppings.isChecked()) {
-            // topping cost is $3
+
             basePrice = basePrice + 3;
         }
 

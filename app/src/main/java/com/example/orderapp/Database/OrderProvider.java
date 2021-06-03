@@ -14,7 +14,7 @@ import java.net.URI;
 
 public class OrderProvider extends ContentProvider {
 
-    // this constant is needed in order to define the path of our modification in the table
+
     public static final int ORDER = 100;
 
     public static UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
@@ -35,7 +35,7 @@ public class OrderProvider extends ContentProvider {
     @Override
     public Cursor query(Uri uri,  String[] projection, String selection, String[] selectionArgs, String sortOrder) {
 
-        // since we are querying from the databse
+
         SQLiteDatabase database = mHelper.getReadableDatabase();
         Cursor cursor;
         int match  = sUriMatcher.match(uri);
@@ -60,7 +60,7 @@ public class OrderProvider extends ContentProvider {
         return null;
     }
 
-    // we will work on this method  because in this app we are just inserting the data not updating it for now
+
     @Override
     public Uri insert(Uri uri,  ContentValues values) {
 
@@ -75,7 +75,7 @@ public class OrderProvider extends ContentProvider {
 
 
     }
-
+// ham add do minh chon vao db
     private Uri insertCart(Uri uri, ContentValues values) {
 
         String name = values.getAsString(OrderContract.OrderEntry.COLUMN_NAME);
@@ -93,7 +93,7 @@ public class OrderProvider extends ContentProvider {
             throw new IllegalArgumentException("price is Required");
         }
 
-        // SINCE WE ARE INSERTING DATA IN DATABASE SO NOW WE ARE WRITING ON DATABASE
+
 
         SQLiteDatabase database = mHelper.getWritableDatabase();
         long id = database.insert(OrderContract.OrderEntry.TABLE_NAME, null, values);
@@ -104,11 +104,11 @@ public class OrderProvider extends ContentProvider {
         getContext().getContentResolver().notifyChange(uri, null);
         return ContentUris.withAppendedId(uri, id);
     }
-
+// xoa data
     @Override
     public int delete( Uri uri,  String selection,  String[] selectionArgs) {
 
-        // we will use this to clear the data once order is made
+
 
 
         int rowsDeleted;

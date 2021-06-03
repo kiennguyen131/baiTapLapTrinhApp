@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imageViewInfo"
-                android:text="Drink Name"
+                android:text="Tên đồ uống"
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="30sp"
                 android:layout_margin="10dp"
@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$5 per cup"
+                android:text="giá:$5 "
                 android:textColor="@android:color/holo_red_light"
                 android:id="@+id/coffeePrice"
                 android:layout_alignRight="@+id/drinkNameinInfo"
@@ -114,14 +114,14 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hot"
+                    android:text="Nóng"
                     android:layout_marginRight="10dp"
                     android:id="@+id/hotradioButton"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iced"
+                    android:text="Lạnh"
                     android:id="@+id/coldRadioButton"/>
 
             </RadioGroup>
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/addCream"
                 android:layout_below="@+id/addToppings"
-                android:text="Add Extra Cream $2"/>
+                android:text="Thêm cream $2"/>
 
             <TextView
                 android:layout_width="wrap_content"
